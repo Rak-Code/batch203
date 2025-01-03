@@ -1,0 +1,33 @@
+package src;
+
+
+
+class Simple{
+
+	public Simple() {
+		String mystr = new String("Hello World");
+		for (int i = 0; i < 100_00; i++) {
+			mystr = new String(i + mystr);
+		}
+		System.out.println("object Created");
+	}
+	
+	
+}
+
+
+
+
+public class ThreadClass {
+
+	public static void main(String[] args) {
+		
+		Simple obj = new Simple();
+		Simple obj2 = new Simple();
+		Simple obj3 = new Simple();
+		Simple obj4 = new Simple();
+		
+
+	}
+
+}

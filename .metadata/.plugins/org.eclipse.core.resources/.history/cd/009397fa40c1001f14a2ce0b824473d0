@@ -1,0 +1,26 @@
+package Package;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class MapHash {
+
+	public static void main(String[] args) {
+		
+		Map<Integer,String> m = new HashMap<Integer,String>();
+//		HashMap<Integer,String> m = new HashMap<Integer,String>();
+		
+		m.put(1, "Rakesh");
+		m.put(2,"Abhishek");
+		m.put(3,"Raj");
+		m.put(1, "Sam");
+		
+		System.out.println(m);
+		
+		
+		
+
+	}
+
+}

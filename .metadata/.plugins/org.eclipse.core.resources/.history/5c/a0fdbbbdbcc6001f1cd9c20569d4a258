@@ -1,0 +1,11 @@
+package lambdaStrings;
+
+
+
+public interface Calc {
+	
+	double claculate(int a,int b);
+
+}
+
+

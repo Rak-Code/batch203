@@ -1,0 +1,29 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Count {
+
+	public static void main(String[] args) {
+		
+		String s = "hello world";
+		
+		Map<Character, Integer> m = new HashMap<Character, Integer>();
+		 
+		int count = 1;
+		
+		for(char i : s.toCharArray()) {
+			if(m.containsKey(i)) {
+				count = count + 1;
+			}
+		}
+		m.put(i, count);
+		
+		System.out.println(m);
+		
+		
+
+	}
+
+}

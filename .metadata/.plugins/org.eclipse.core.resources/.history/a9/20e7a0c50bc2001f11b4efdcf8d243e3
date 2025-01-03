@@ -1,0 +1,31 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		
+
+        Map<Integer, String> m = new TreeMap<Integer, String>();
+        
+        
+  
+        for(int i = 1;i <=10;i++) {
+        	if(i % 2 == 0) {
+        		m.put(i, "even");
+        	}
+        	else {
+        		m.put(i, "odd");
+        	}
+        }
+        
+
+ 
+        System.out.println(m);
+
+	}
+
+}

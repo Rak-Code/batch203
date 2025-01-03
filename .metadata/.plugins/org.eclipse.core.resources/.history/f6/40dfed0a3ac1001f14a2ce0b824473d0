@@ -1,0 +1,93 @@
+package Package;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
+
+class Student implements Comparable<Student>,Comparator<Student>{
+	int id;
+	String name;
+	public Student(int id, String name) {
+		
+		this.id = id;
+		this.name = name;
+	}
+//	@Override
+//	public int compareTo(Student o) {
+//		// TODO Auto-generated method stub
+//		return o.id - this.id;
+//	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return this.id;
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Student st = (Student)obj;
+		return st.id == this.id;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.id + " "+ this.name;
+	}
+	@Override
+	public int compare(Student o1, Student o2) {
+		// TODO Auto-generated method stub
+		return o1.id - o2.id;
+	}
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+}
+
+
+public class CollectionSet {
+
+	public static void main(String[] args) {
+
+
+//		Set<Integer> s = new HashSet<Integer>();
+//		s.add(4);
+////		s.add('R');
+////		s.add("Raj");
+//		s.add(2);
+//		s.add(20);
+//		s.add(24);
+//		s.add(52);
+//		s.add(-2);
+//		
+//		Set<Integer> s1 = new HashSet<Integer>(s);
+//		
+////		Object[] a =  s.toArray();
+////		s.add('A');
+////		s.add("Rex");
+//		
+//		
+////		System.out.println(s.toArray());
+//		System.out.println(s);
+//		System.out.println(s1.remove(2));
+//		System.out.println(s1);
+//		
+////		System.out.println(a);
+		
+		Set<Student> s = new HashSet<Student>();
+		s.add(new Student(1, "Raj"));
+		s.add(new Student(1, "Rarrj"));
+		s.add(new Student(2, "Raaaj"));
+		
+		System.out.println(s);
+
+	}
+
+}

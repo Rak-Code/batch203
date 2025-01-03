@@ -1,0 +1,36 @@
+package first;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Count {
+
+    public static void main(String[] args) {
+        
+        String s = "hello world".trim();
+        
+        
+        
+        Map<Character, Integer> m = new HashMap<Character, Integer>();
+        
+        
+        for (char i : s.toCharArray()) {
+           
+          
+                
+                if (m.containsKey(i)) {
+                    m.put(i, m.get(i) + 1);
+                } else {
+                  
+                    m.put(i, 1);
+                   
+                }
+            }
+        
+
+ 
+        System.out.println(m);
+    }
+    
+}
+

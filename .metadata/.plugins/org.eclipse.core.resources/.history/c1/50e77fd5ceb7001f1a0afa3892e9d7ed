@@ -1,0 +1,19 @@
+package src;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		System.out.println("Hi...");
+		try {
+			
+			System.out.println(1/0);
+		}finally {
+			System.out.println("Hello");
+		}
+		
+		System.out.println("world");
+
+	}
+
+}

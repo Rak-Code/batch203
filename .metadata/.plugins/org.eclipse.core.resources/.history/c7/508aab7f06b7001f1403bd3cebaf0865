@@ -1,0 +1,26 @@
+package stringprojects;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class Date {
+
+	public static void main(String[] args) {
+		
+		LocalDate d = LocalDate.now();
+		System.out.println(d);
+		
+		LocalDateTime l = LocalDateTime.now();
+		System.out.println(l);
+
+		LocalTime t = LocalTime.now();
+		System.out.println(t);
+		
+		DateTimeFormatter f = DateTimeFormatter.ofPattern("dd-mm-yy");
+		System.out.println(f);
+		
+	}
+
+}

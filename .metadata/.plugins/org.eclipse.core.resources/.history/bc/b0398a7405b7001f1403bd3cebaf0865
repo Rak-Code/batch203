@@ -1,0 +1,17 @@
+package stringprojects;
+
+import java.time.LocalDate;
+
+public class Date {
+
+	public static void main(String[] args) {
+		
+		LocalDate d = LocalDate.now();
+		System.out.println(d);
+		
+		LocalDate l = LocalDate.now();
+		System.out.println(l);
+
+	}
+
+}

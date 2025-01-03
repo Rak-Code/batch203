@@ -1,0 +1,23 @@
+package stringprojects;
+
+import java.util.Iterator;
+
+public class First {
+
+	public static void main(String[] args) {
+		
+		String s = new String("Hello World");
+		
+		System.out.println(s);
+		String name = "Rakesh";
+		String fullName = "Rakesh" + "Gupta";
+		
+		for(int i = 0;i < name.length();i++) {
+			System.out.print(name.charAt(i)+ " ,");
+		}
+		
+		System.out.println(fullName.equals("Rakesh Gupta"))
+
+	}
+
+}

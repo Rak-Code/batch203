@@ -1,0 +1,22 @@
+package first;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class linkedHashMap {
+
+	public static void main(String[] args) {
+		
+		Map<Integer, String> m = new LinkedHashMap<Integer, String>();
+		m.put(1, null);
+		m.put(2, null);
+		Map<Integer, String> m2 = m;
+
+		
+		System.out.println(m);
+		System.out.println(m2);
+		
+	}
+}
+
+

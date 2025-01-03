@@ -1,0 +1,19 @@
+package Package;
+
+import java.util.Stack;
+
+public class StackClass {
+
+	public static void main(String[] args) {
+		Stack<Integer> s1 = new Stack<Integer>();
+		s1.add(1);
+		s1.push(2);
+		s1.add(3);
+		s1.push(4);
+		
+		System.out.println(s1);
+		
+
+	}
+
+}

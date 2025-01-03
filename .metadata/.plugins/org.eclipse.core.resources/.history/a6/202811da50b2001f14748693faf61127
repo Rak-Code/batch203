@@ -1,0 +1,17 @@
+package banksystem;
+
+public class Main {
+
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Bank b = new Bank();
+		double a = b.getROI();
+		System.out.println(a);
+
+	}
+
+}

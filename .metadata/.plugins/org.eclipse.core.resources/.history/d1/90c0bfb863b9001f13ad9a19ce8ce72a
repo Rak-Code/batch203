@@ -1,0 +1,29 @@
+package first;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Wrapper {
+
+	public static void main(String[] args) {
+		
+		int a = 10;
+		Integer b = a;
+		int c =  a;
+		
+		
+		List<Object> al = new ArrayList<Object>();
+		
+		al.add("hello");
+		al.add("world");
+		al.add('A');
+		al.add(123);
+		al.add(true);
+		
+		System.out.println(al);
+		
+		
+
+	}
+
+}

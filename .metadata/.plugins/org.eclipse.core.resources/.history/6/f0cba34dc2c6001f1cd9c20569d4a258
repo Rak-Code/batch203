@@ -1,0 +1,5 @@
+package lambdaStrings;
+
+public interface Times {
+
+}

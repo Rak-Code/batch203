@@ -1,0 +1,20 @@
+package stringprojects;
+
+public class BufferBuilder {
+
+	public static void main(String[] args) {
+		
+		StringBuffer s1 = new StringBuffer("Hello World");
+//		s1.append(" Abhishek");
+		s1.insert(19, "Abhishek");
+		
+		
+		
+		
+		
+		
+		System.out.println(s1);
+
+	}
+
+}

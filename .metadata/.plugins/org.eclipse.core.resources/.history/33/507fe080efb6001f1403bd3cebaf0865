@@ -1,0 +1,61 @@
+package stringprojects;
+
+import java.util.Scanner;
+
+public class Input {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		StringBuffer str = new StringBuffer();
+		StringBuffer str2 = new StringBuffer();
+		
+		int count = 0;
+		int where = 0;
+		int how = 0;
+		System.out.println("Sentence count");
+		count = sc.nextInt();
+	
+		sc.nextLine();
+		
+		for(int i = 0; i < count;i++) {
+			String data = sc.next();
+			str = str.append(data).append(" ");
+		}
+	System.out.println(str);
+	
+	System.out.println("Sentence where index: ");
+	where = sc.nextInt();
+	
+	System.out.println("Sentence how many : ");
+	how = sc.nextInt();
+	
+	
+	for(int i = 0; i < how;i++) {
+		String data2 = sc.next();
+		str2 = str2.append(data2).append(" ");
+	}
+	
+	int index = 0;
+	for(int i =0;i < how;i++) {
+		index++;
+		if(str.charAt(i)==' ') {
+			where--;
+		}
+		if(where == 0) {
+			break;
+		}
+	}
+	
+	
+	str.insert(where,str2);
+	
+	System.out.println(str);
+	
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,57 @@
+package first;
+
+import java.util.Scanner;
+
+//Generics......
+
+class Employee<T>{
+	private int id;
+	private String name;
+	private T contactNumber;
+	public Employee(int id, String name, T contactNumber) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.contactNumber = contactNumber;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public T getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(T contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	
+}
+public class First {
+
+	public static void main(String[] args) {
+		
+		Employee e = new Employee(101,"Raj","+91 8928775829");
+		Scanner sc = new Scanner(System.in);
+		
+		long  no = sc.nextLong();
+		
+		
+		System.out.println(e.getContactNumber().getClass().getSimpleName());
+		
+		String s = new String("rakesh");
+		s.Integer.parseInt(s);
+		
+		
+		
+
+	}
+
+}
